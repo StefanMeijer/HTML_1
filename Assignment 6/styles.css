@@ -1,0 +1,43 @@
+body {
+  font-family: arial;
+}
+
+.blueBorder {
+  border: 3px solid blue;
+}
+
+.redText {
+  color: red;
+}
+
+.grayText {
+  color: gray;
+}
+
+.bigImage {
+  width: 500px;
+}
+
+.row {
+  width: 700px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 150px;
+}
+
+td, th, tr {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+
+th:nth-child(odd) {
+  background-color: yellow;
+}
+
+td:nth-child(even) {
+  background-color: lightgray;
+}
