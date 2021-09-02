@@ -27,3 +27,7 @@ body {
   width: 33.33%;
   height: 150px;
 }
+
+.fixedHeight{
+  height: 100px;
+}
