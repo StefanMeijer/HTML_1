@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tourist information Amsterdam</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="column1">
+        <div class="adjust">
+          <a href="https://www.amsterdam.nl">
+            <img src="images/amsterdam.gif" alt="Logo" />
+          </a>
+        </div>
+      </div>
+      <div class="column2">
+        <h1>Tourist information Amsterdam</h1>
+      </div>
+    </div>
+
+    <div id="content">
+      <div class="article column1">
+        <ul>
+          <li><a href="museuminfo.html">Museum info</a></li>
+          <li><a href="museums.html">Museums</a></li>
+          <li><a href="bridges.html">Bridges</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://www.amsterdam.nl">Home</a></li>
+        </ul>
+      </div>
+      <div class="article column2">
+        <h2>Contact us @ Tourist Information Amsterdam</h2>
+        <div class="row">
+          <form action="#">
+            <div class="form-control">
+              <label class="d-block headLabel">Full name *</label>
+              <input
+                required
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="First"
+                class="halfLenght"
+              />
+              <input
+                required
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Last"
+                class="halfLenght"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">E-mail *</label>
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Contact type *</label>
+              <select required id="ctype" name="ctype">
+                <option value="question">Question</option>
+                <option value="reply">Reply</option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Message *</label>
+              <textarea
+                required
+                id="subject"
+                name="subject"
+                placeholder="Your message..."
+                style="height: 200px"
+              ></textarea>
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Sign-up for newsletter</label>
+              <label>Yes</label>
+              <input type="radio" id="Yes" name="mailer" value="Yes" />
+              <label>No</label>
+              <input
+                checked="checked"
+                type="radio"
+                id="No"
+                name="mailer"
+                value="No"
+              />
+            </div>
+
+            <div class="form-control">
+              <input type="submit" value="Send" />
+              <input type="reset" value="Reset form" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <span>&copy; 2020-2021</span>
+      <a href="https://www.amsterdam.nl">
+        <span class="floatRight">NHL Stenden Hogeschooluniversity</span>
+      </a>
+    </div>
+  </body>
+</html>

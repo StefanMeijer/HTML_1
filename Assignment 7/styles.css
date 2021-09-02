@@ -1,0 +1,126 @@
+/* Global */
+body {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.row {
+  width: 95%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  height: 150px;
+}
+.column1 {
+  width: 20%;
+  float: left;
+}
+.column2 {
+  width: 80%;
+  float: left;
+}
+.d-block {
+  display: block;
+}
+
+/* Header */
+#header {
+  height: 15vh;
+  background-color: gray;
+  color: lightgray;
+}
+#header .column1 .adjust {
+  width: 55%;
+  padding: 13px 0px 0px 20px;
+}
+#header .column1 .adjust img {
+  width: 120%;
+}
+
+/* Content */
+#content {
+  overflow: auto;
+  height: 83vh;
+  background-color: lightgray;
+}
+#content p {
+  color: gray;
+}
+#content h2 {
+  color: goldenrod;
+}
+#content .bottomLine {
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+}
+#content ul {
+  padding-left: 10%;
+}
+#content li {
+  display: block;
+  padding: 2px;
+}
+#content li a {
+  color: gray;
+}
+#content .fixedHeight {
+  height: 100px;
+}
+#content td,
+th,
+tr {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+}
+#content th:nth-child(odd) {
+  background-color: goldenrod;
+}
+#content td:nth-child(even) {
+  background-color: white;
+}
+#content label.headLabel {
+  color: gray;
+  font-size: 19px;
+}
+#content form .halfLenght {
+  width: 50% !important;
+  float: left;
+}
+#content form .form-control {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+#content input[type="text"],
+input[type="email"],
+select,
+textarea {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Footer */
+#footer {
+  height: 2vh;
+  background-color: gray;
+  color: lightgray;
+}
+#footer .floatRight {
+  float: right;
+  color: lightgray;
+}
