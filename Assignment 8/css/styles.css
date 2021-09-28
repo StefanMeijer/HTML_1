@@ -1,0 +1,137 @@
+/* GLOBAL */
+:root {
+  --gray: #676767;
+  --lightgray: lightgray;
+  --gold: goldenrod;
+  --white: #fff;
+  --black: #000000;
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  text-decoration: none;
+  color: var(--gray);
+}
+
+section {
+  display: grid;
+  justify-content: center;
+  background-image: url("../images/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 75vw;
+  height: 15vh;
+  background-color: var(--gray);
+  color: var(--lightgray);
+}
+
+main {
+  width: 75vw;
+  height: 83vh;
+  display: flex;
+  background-color: var(--lightgray);
+}
+
+article {
+  display: flex;
+  min-width: 15%;
+  max-width: 80%;
+}
+
+footer {
+  display: flex;
+  width: 75vw;
+  height: 2vh;
+  background-color: var(--gray);
+  color: var(--lightgray);
+}
+
+/* HEADER */
+header article.logo {
+  align-items: center;
+  justify-content: center;
+}
+header article.title {
+  align-items: center;
+  font-size: 1.5em;
+}
+
+/* MAIN */
+main article.navlist {
+  justify-content: center;
+}
+main article.navlist ul li {
+  display: block;
+  padding: 2px;
+}
+main article.navlist ul li a {
+  color: var(--gray);
+}
+main article.content {
+  display: block;
+}
+main article.content h2 {
+  color: var(--gold);
+}
+
+/* FOOTER */
+footer span {
+  color: var(--lightgray);
+}
+footer article.right {
+  margin-left: auto;
+}
+
+/* INDEX.HTML */
+
+/* MUSEUMINFO.HTML*/
+table {
+  border: 1px solid var(--black);
+}
+table th {
+  text-align: center;
+}
+table td,
+th,
+tr {
+  border: 1px solid var(--black);
+  text-align: left;
+  padding: 8px;
+}
+table tr th:nth-child(odd) {
+  background-color: var(--gold);
+}
+table tr td:nth-child(even) {
+  background-color: var(--white);
+}
+
+/* MUSEUMS.HTML */
+main article.content hr {
+  height: 2px;
+  background-color: #000;
+}
+main article.content .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+main article.content .container .column {
+  width: 20vw;
+}
+main article.content .container .column .fixedHeight {
+  height: 100px;
+}
