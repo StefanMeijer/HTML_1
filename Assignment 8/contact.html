@@ -10,17 +10,17 @@
   <body>
     <section>
       <header>
-        <article class="logo">
+        <div class="logo">
           <img src="images/amsterdam.gif" alt="logo" />
-        </article>
+        </div>
 
-        <article class="title">
+        <div class="title">
           <h1>Tourist information Amsterdam</h1>
-        </article>
+        </div>
       </header>
 
       <main>
-        <article class="navlist">
+        <div class="navlist">
           <ul>
             <li><a href="museuminfo.html">Museum info</a></li>
             <li><a href="museums.html">Museums</a></li>
@@ -28,23 +28,92 @@
             <li><a href="contact.html">Contact</a></li>
             <li><a href="index.html">Home</a></li>
           </ul>
-        </article>
+        </div>
 
-        <article class="content">
-          <span>content</span>
-        </article>
+        <div class="content formDiv">
+          <form method="POST" action="#">
+            <div class="form-control">
+              <label class="d-block headLabel">Full name *</label>
+              <input
+                required
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="First"
+                class="halfLenght"
+              />
+              <input
+                required
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Last"
+                class="halfLenght"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">E-mail *</label>
+              <input
+                required
+                type="email"
+                id="email"
+                name="email"
+                placeholder="E-Mail"
+              />
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Contact type *</label>
+              <select id="questionType" name="questionType">
+                <option value="question">Question</option>
+                <option value="reply">Reply</option>
+              </select>
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Message *</label>
+              <textarea
+                required
+                id="subject"
+                name="subject"
+                placeholder="Your message..."
+                style="height: 200px"
+              ></textarea>
+            </div>
+
+            <div class="form-control">
+              <label class="d-block headLabel">Sign-up for newsletter</label>
+              <label>Yes</label>
+              <input type="radio" id="Yes" name="mailer" value="Yes" />
+              <label>No</label>
+              <input
+                checked="checked"
+                type="radio"
+                id="No"
+                name="mailer"
+                value="No"
+              />
+            </div>
+
+            <div class="form-control">
+              <input type="submit" value="Send" />
+              <input type="reset" value="Reset form" />
+            </div>
+          </form>
+        </div>
       </main>
 
       <footer>
-        <article>
+        <div>
           <span>&copy; 2020-2021</span>
-        </article>
+        </div>
 
-        <article class="right">
+        <div class="right">
           <a href="https://www.amsterdam.nl">
             <span>NHL Stenden Hogeschooluniversity</span>
           </a>
-        </article>
+        </div>
       </footer>
     </section>
   </body>

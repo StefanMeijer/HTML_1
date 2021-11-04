@@ -22,6 +22,10 @@ ul {
   color: var(--gray);
 }
 
+.d-block {
+  display: block;
+}
+
 section {
   display: grid;
   justify-content: center;
@@ -32,6 +36,7 @@ section {
 }
 
 header {
+  min-width: 15%;
   display: flex;
   /* flex-wrap: wrap; */
   width: 75vw;
@@ -62,25 +67,31 @@ footer {
 }
 
 /* HEADER */
-header article.logo {
+header div.logo {
   align-items: center;
   justify-content: center;
+  display: flex;
+  min-width: 15%;
 }
-header article.title {
+header div.title {
   align-items: center;
   font-size: 1.5em;
 }
 
 /* MAIN */
-main article.navlist {
+main div.navlist {
   justify-content: center;
+  min-width: 15%;
 }
-main article.navlist ul li {
+main div.navlist ul li {
   display: block;
   padding: 2px;
 }
-main article.navlist ul li a {
+main div.navlist ul li a {
   color: var(--gray);
+}
+main div.content h2 {
+  color: var(--gold);
 }
 main article.content {
   display: block;
@@ -93,7 +104,7 @@ main article.content h2 {
 footer span {
   color: var(--lightgray);
 }
-footer article.right {
+footer div.right {
   margin-left: auto;
 }
 
@@ -121,17 +132,47 @@ table tr td:nth-child(even) {
 }
 
 /* MUSEUMS.HTML */
-main article.content hr {
+main div.content hr {
   height: 2px;
   background-color: #000;
 }
-main article.content .container {
+main div.content .container {
   display: flex;
   flex-wrap: wrap;
 }
-main article.content .container .column {
+main div.content .container .column {
   width: 20vw;
 }
-main article.content .container .column .fixedHeight {
+main div.content .container .column .fixedHeight {
   height: 100px;
+}
+
+
+
+
+
+
+.formDiv {
+  width: 100%;
+  max-width: 80%;
+}
+form .halfLenght {
+  width: 50% !important;
+  float: left;
+}
+form .form-control {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
